@@ -1,0 +1,120 @@
+#projects{
+  width: 100%;
+
+  h1{
+    @include section-title
+  }
+}
+
+#projects > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  img{
+    max-width: 400px;
+    // border: 1px solid black;
+  }
+
+  .project-body{
+    width: 50%;
+    margin: 0 30px 0 30px;
+    position: relative;
+
+    h3{
+      font-size: 1.2em;
+    }
+
+    a{
+      color: black;
+    }
+
+  }
+
+  .even{
+    text-align: right;
+  }
+
+  .even div:last-of-type{
+    right: 0px;
+  }
+
+  // Icons
+  .project-body div{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .even div{
+    svg{
+      margin-left: 10px;
+    }
+  }
+
+  .odd div{
+    svg{
+      margin-right: 10px;
+    }
+  }
+
+  .project-body div:last-of-type{
+    position: absolute;
+    bottom: 0px;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  @media only screen and (max-width: 934px) {
+    .project-body{
+      width: 80%;
+      margin: 40px 0 0 0;
+    }
+
+    h2, h3, .project-body div {
+      text-align: center;
+    }
+
+    p{
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .project-body div:last-of-type{
+      position:relative;
+      text-align: center;
+      font-size: 2em;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+
+      svg{ 
+        margin: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 934px) {
+  #projects > div{
+
+    img{
+      width: 80%;
+      max-width: 700px;
+    }
+  }
+
+  #projects > :nth-child(odd){
+    align-items: center;
+
+    .project-body{
+      display: flex;
+      order: 1;
+      flex-direction: column;
+
+      p{
+        text-align: left;
+      }
+    }
+  }
+}

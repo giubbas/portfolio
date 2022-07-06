@@ -1,0 +1,41 @@
+.navbar{
+  #basic-navbar-nav{
+    justify-content: space-around!important;
+
+    a{
+      margin-right: 35px;
+      text-decoration: none;
+      color: black;
+      text-decoration: underline;
+      text-decoration-color: $green;
+      text-decoration-thickness: 2px;
+    }
+  
+    a:hover{
+      color: $green;
+    }
+  }
+
+  button{
+    border: none;
+    margin-right: 25px;
+  }
+
+  button:focus{
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-collapse{
+    flex-direction: column;
+    display: flex;
+
+
+    a{
+      margin-bottom: 15px;
+    }
+  }
+}

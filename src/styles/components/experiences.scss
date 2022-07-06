@@ -1,0 +1,132 @@
+#experience{
+  min-height: 100vh;
+
+  h1{
+    text-align: center;
+    margin-bottom: 60px;
+    @include section-title
+  }
+
+  .timeline-container{
+    max-width: 1000px;
+    margin: auto;
+    position: relative;
+
+    .timeline-item{
+      margin-bottom: 70px;
+
+      .dot{
+        width: 16px;
+        height: 16px;
+        background: $green;
+        border-radius: 50%;
+        position: absolute;
+        left: calc(50% - 8px);
+        margin-top: 4.3px;
+      }
+
+      label{
+        font-weight: 600;
+      }
+  
+      .odd-label{
+        position: absolute;
+        left: calc(50% - 60px);
+      }
+  
+      .even-label{
+        position: absolute;
+        right: calc(50% - 60px);
+      }
+  
+      .timeline-card{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        div{
+          max-width: 400px;
+
+          h3{
+            font-size: 1.2em;
+
+          }
+
+          h4{
+            font-size: 1em;
+            font-weight: 400;
+          }
+
+          p{
+            margin-top: 15px;
+            
+            ul{
+              padding-left: 15px;
+            }
+          }
+        }
+  
+        // .odd{
+        //   text-align: left;
+        // }
+  
+        // .even{
+        //   text-align: left;
+        // }
+  
+        img{
+          width: 350px;
+        }
+      }
+    }
+  }
+
+  .timeline-container::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: $green;
+    left: calc(50% - 1px);
+  }
+
+  @media only screen and (max-width: 834px) {
+    .timeline-container{
+
+      .timeline-item{
+
+        .odd-label, .even-label{
+          left: 50px;
+        }
+
+        .dot{
+          left: 13px;
+        }
+  
+  
+        .timeline-card{
+
+          margin: 0 0 0 50px;
+          padding: 30px 50px 0 0;
+          width: 100%;
+
+          div{
+            max-width: 90%;
+          }
+
+          .odd{
+            text-align: left;
+          }
+      
+          img{
+            display: none;
+          }
+        }
+      }
+    }
+
+    .timeline-container::before{
+      left: 20px;
+    }
+  }
+}
