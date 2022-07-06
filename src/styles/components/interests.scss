@@ -17,8 +17,14 @@
   }
 }
 
+@media only screen and (max-width: 1094px) {
+  #interests img:last-of-type{
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 934px) {
-  #interests img:not(.interests img:first-of-type){
+  #interests img:not(#interests img:first-of-type){
     display: none;
   }
 }

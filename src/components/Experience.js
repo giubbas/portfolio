@@ -9,7 +9,7 @@ const Experience = () => {
 
   return (
     <section id='experience'>
-      <h1>Experiences</h1>
+      <h1>Experience</h1>
         <div className='timeline-container'>
 
           <div className='timeline-item'>

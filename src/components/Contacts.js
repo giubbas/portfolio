@@ -13,7 +13,7 @@ const Contacts = () => {
         <img src={profile} alt="profile" />
         <div>
           <ul>
-            <li><AiOutlineMail />Email</li>
+            <li><a href="mailto:riccardogiubiloweb@gmail.com"><AiOutlineMail />Email</a></li>
             <li><a href='https://github.com/giubbas' target="_blank" rel="noreferrer"><AiFillGithub />GitHub</a></li>
             <li><a href='https://www.linkedin.com/in/riccardo-giubilo/' target="_blank" rel="noreferrer"><AiFillLinkedin />LinkedIn</a></li>
           </ul>
