@@ -27,4 +27,9 @@
   #interests img:not(#interests img:first-of-type){
     display: none;
   }
+  #interests{
+    img{
+      margin-top: 50px;
+    }
+  }
 }

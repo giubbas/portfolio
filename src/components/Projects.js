@@ -32,12 +32,12 @@ const Projects = () => {
           </div>
           <p>
             Full-stack application which was rooted in Python, Django and PostgreSQL back-end.
-            I created a website about food where you can be inspired by other people’s recipes and comment on them. Also you can post your meal, update it and delete it.
+            I created a website about food where you can be inspired by other people’s recipes and comment on them. You can also post your meal, update it and delete it.
           </p>
           <div>
-            <a href="/" target="_blank" rel="noreferrer">
+            {/* <a href="/" target="_blank" rel="noreferrer">
               <FaExternalLinkSquareAlt />
-            </a>
+            </a> */}
             <a href="https://github.com/giubbas/GA-Project-4" target="_blank" rel="noreferrer">
               <IoLogoGithub />
             </a>
@@ -81,7 +81,7 @@ const Projects = () => {
             <SiBootstrap />
           </div>
           <p>
-            In two days we built a React app which used an external API. The project was invaluable in terms of learning to pair-code and being able to share our different strengths and skills.
+            In two days, we built a React app which used an external API. The project was invaluable in terms of learning to pair-code and being able to share our different strengths and skills.
           </p>
           <div>
             <a href="https://zoojourney.netlify.app/" target="_blank" rel="noreferrer">
@@ -106,7 +106,7 @@ const Projects = () => {
             <SiPostgresql />
           </div>
           <p>
-            Full-Stack MERN app with CRUD functionality. As a group we created a book app in 
+            Full-Stack MERN app with CRUD functionality. As a group, we created a book app in 
             which the user can register and interact by posting reviews or adding books to the 
             wishlist. I particularly focussed on building the reviews’ posting and deleting functionalities and the home page.
           </p>
