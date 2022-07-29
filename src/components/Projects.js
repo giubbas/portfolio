@@ -35,9 +35,9 @@ const Projects = () => {
             I created a website about food where you can be inspired by other people’s recipes and comment on them. You can also post your meal, update it and delete it.
           </p>
           <div>
-            {/* <a href="/" target="_blank" rel="noreferrer">
+            <a href="https://mealing-list.herokuapp.com/" target="_blank" rel="noreferrer">
               <FaExternalLinkSquareAlt />
-            </a> */}
+            </a>
             <a href="https://github.com/giubbas/GA-Project-4" target="_blank" rel="noreferrer">
               <IoLogoGithub />
             </a>
