@@ -10,7 +10,7 @@
   }
 }
 
-.homepage div{
+.homepage-container{
   width: 100%;
   height: 80%;
   display: flex;
@@ -18,13 +18,18 @@
   align-items: center;
   padding: 70px;
 
-  h1{
-    font-size: 3em;
-    align-self: flex-start;
-    padding: 150px 0 0 0;
+    div{
+      min-width: 429.39px;
 
-    span{
-      color: $green;
+      h1{
+        font-size: 2.7em;
+        align-self: flex-start;
+        // padding: 150px 0 0 0;
+    
+      .typing-animation{
+        color: $green;
+        display: inline;
+      }
     }
   }
 
@@ -38,11 +43,22 @@
     justify-content: space-between;
   }
 
-  .homepage div{
-    padding: 20px; 
+  .homepage-container{
+    padding: 20px;
   }
 
   .homepage div img{
     display: none;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .homepage-container div{
+    min-width: 331.47px;
+    padding: 0px;
+
+    h1{
+      font-size: 2.3em;
+    }
   }
 }
